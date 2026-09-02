@@ -215,13 +215,7 @@ class LPENet(nn.Module):
         self.pixel_shuffle = nn.PixelShuffle(2)
 
     def forward(self, img_lq, img_ref): 
-        """
-        Args:
-            x (Tensor): the input image of SRNTT.
-            maps (dict[Tensor]): the swapped feature maps on relu2_1 and relu1_1. 
-          
-            depths of the maps are 128 and 64 respectively.
-        """
+        
         h, w = img_ref.shape[2:]
         img_lq = F.interpolate(img_lq, size = (h // 2, w // 2), mode='bilinear')
         lq_feat = self.fusion(img_lq)
