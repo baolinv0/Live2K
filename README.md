@@ -194,6 +194,12 @@ Results are saved under:
 results/results/<experiment_name>/
 ```
 
+## Documentation
+
+工程评估与技术边界笔记：
+
+- [Live2K 技术研究笔记](DOC/Live2K_Technical_Notes.md)
+
 ## Citation
 
 If this project is useful for your research, please cite:
